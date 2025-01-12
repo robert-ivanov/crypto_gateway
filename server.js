@@ -20,7 +20,7 @@ app.post('/api/register-internal-user', registerInternalUser);
 app.post('/api/verify-merchant', authorizeInternalUser, verifyMerchant);
 app.post('/api/generate-api-key-wallet', authorizeMerchantUser, generateApiKeyAndWallet);
 app.post('/api/add-middle-wallet', authorizeMerchantUser, addMiddleWallet);
-
+console.log("This is a test log to verify Git functionality!");
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
